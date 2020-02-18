@@ -28,3 +28,19 @@ code {
 .done {
   text-decoration: line-through;
 }
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 5px solid #178194;
+  border-radius: 50px;
+  border-bottom: none;
+  will-change: transform;
+  animation: spin 1s linear infinite;
+  box-sizing: border-box;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
